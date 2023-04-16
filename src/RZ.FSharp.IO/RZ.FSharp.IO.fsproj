@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/ruxo/RZ.FSharp.Extension</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Cancel.fs" />
+    <Compile Include="IO.fs" />
+    <Compile Include="Sys\Random.fs" />
+    <Compile Include="Sys\Console.fs" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="RZ.FSharp.Extension" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
